@@ -7,7 +7,12 @@
 <body>
     <!-- Create a EJS Template -->
     <!-- To intialize ejs function-->
-    <h1>Its a <%= kindOfDay %> !</h1>
+    <!-- to use control flow in html we can <% %> Scriplet tags and it is line based all the js part will be covered -->
+    <% if(kindOfDay === "Saturday" || kindOfDay === "Sunday"){ %>
+    <h1 style="color: blue;"><%= kindOfDay %> List</h1>
+    <% } else{ %>
+        <h1 style="color:red;"><%= kindOfDay %> List</h1>
+    <% } %>
    
 </body>
 </html>

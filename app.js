@@ -15,6 +15,7 @@ app.get("/",function (req,res) {
    var currentDay = today.getDay();
 //    console.log(currentDay)
    var day ="";
+   // switch case currentDay
    switch (currentDay) {
        case 0:
        day="sunday";
